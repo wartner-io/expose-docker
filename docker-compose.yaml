@@ -1,7 +1,7 @@
 version: "3.7"
 services:
   expose:
-    image: wartnerio/expose:latest
+    image: ghcr.io/wartner-io/expose-docker:main
     ports:
       - 8080:${PORT}
     environment:
