@@ -14,6 +14,8 @@ version: "3.7"
 services:
   expose:
     image: ghcr.io/wartner-io/expose-docker:main
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     ports:
       - 8080:${PORT}
     environment:
